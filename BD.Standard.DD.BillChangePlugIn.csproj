@@ -7,8 +7,8 @@
     <ProjectGuid>{489D9DC0-955C-442A-987A-946B9F027B5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BD.Standard.DD.BillChangePlugIns3s6</RootNamespace>
-    <AssemblyName>BD.Standard.DD.BillChangePlugIns3s6</AssemblyName>
+    <RootNamespace>BD.Standard.DD.BillChangePlugIns2606X01</RootNamespace>
+    <AssemblyName>BD.Standard.DD.BillChangePlugIns2606X01</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -67,9 +67,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.WebApi.FormService.dll</HintPath>
     </Reference>
+    <Reference Include="Kingdee.K3.MFG.ServiceHelper, Version=8.2.886.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.ServiceHelper.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
@@ -97,6 +102,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AduitOperation.cs" />
+    <Compile Include="Calculation\MrpWizardForm.cs" />
+    <Compile Include="Calculation\HighVersionBomDatas.cs" />
     <Compile Include="Inquiry\CreateView.cs" />
     <Compile Include="Inquiry\PurInquiryListPlugIn.cs" />
     <Compile Include="StartLocks\LocksUtils.cs" />
