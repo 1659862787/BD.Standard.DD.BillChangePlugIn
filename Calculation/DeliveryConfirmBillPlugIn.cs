@@ -29,13 +29,38 @@ namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
                     {
                         string message = "收货确认单到货验收日期需大于发货日期";
                         this.View.ShowErrMessage(message);
+                        
                     }
                 }
                 catch (Exception ex)
                 {
-                    this.View.ShowErrMessage(ex.Message);
-                } 
+                    throw new Exception(ex.Message);
+                }
             }
         }
+        public override void BeforeDoOperation(BeforeDoOperationEventArgs e)
+        {
+            base.BeforeDoOperation(e);
+            try
+            {
+                //
+                if (e.Operation.FormOperation.Operation.EqualsIgnoreCase("Save"))
+                {
+                    DateTime F_QEBI_Date2 = Convert.ToDateTime(this.View.Model.GetValue("F_QEBI_Date2"));
+                    DateTime F_QEBI_GYDATE = Convert.ToDateTime(this.View.Model.GetValue("F_QEBI_GYDATE"));
+                    if (F_QEBI_Date2 <= F_QEBI_GYDATE)
+                    {
+                        string message = "收货确认单到货验收日期需大于发货日期";
+                        this.View.ShowErrMessage(message);
+                        e.Cancel = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+       
     }
 }

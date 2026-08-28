@@ -39,7 +39,6 @@ namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
             base.BeginOperationTransaction(e);
             string opera = this.FormOperation.Operation;
             IOperationResult operationResult = new OperationResult();
-
             try
             {
                 foreach (DynamicObject entity in e.DataEntitys)
@@ -61,16 +60,17 @@ namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
                                 object Image = FMaterialId["Image"];
                                 if (Image == null)
                                 {
-                                    //throw new Exception($"物料{Number}的图片附件为空，上传图片附件后重新提交");
-                                    operationResult.OperateResult.Add(new OperateResult()
-                                    {
-                                        SuccessStatus = false,
-                                        Name = "图片附件获取失败",
-                                        Message = string.Format($"物料{Number}的图片附件为空，上传图片附件后重新提交"),
-                                        MessageType = MessageType.Normal,
-                                        PKValue = 0,
-                                    });
-                                    e.CancelOperation = true;
+                                    throw new Exception($"物料{Number}的图片附件为空，上传图片附件后重新提交");
+                                    
+                                    //operationResult.OperateResult.Add(new OperateResult()
+                                    //{
+                                    //    SuccessStatus = false,
+                                    //    Name = "图片附件获取失败",
+                                    //    Message = string.Format($"物料{Number}的图片附件为空，上传图片附件后重新提交"),
+                                    //    MessageType = MessageType.Normal,
+                                    //    PKValue = 0,
+                                    //});
+                                    //e.CancelOperation = true;
                                 }
                                 else
                                 {
@@ -78,7 +78,7 @@ namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
                                     string SendByte = Convert.ToBase64String(FIMAGE);
                                     var imageName = Number + Name;
                                     JObject ImageObjData = new JObject();
-                                    ImageObjData.Add("FileName", imageName + ".png");
+                                    ImageObjData.Add("FileName", imageName + ".jpg");
                                     ImageObjData.Add("FormId", "PUR_Requisition");
                                     ImageObjData.Add("IsLast", "true");
                                     ImageObjData.Add("InterId", fid);
@@ -97,7 +97,7 @@ namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
                         DBUtils.Execute(Context, $"delete from T_BAS_ATTACHMENT where FINTERID={fid} and FBILLTYPE='PUR_Requisition'");
                     }
                 }
-                this.OperationResult.MergeResult(operationResult);
+                //this.OperationResult.MergeResult(operationResult);
                
             }
             catch (Exception ex)
