@@ -102,6 +102,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AduitOperation.cs" />
+    <Compile Include="Calculation\DeliveryConfirmBillPlugIn.cs" />
+    <Compile Include="Calculation\ProOrderBillPlugin.cs" />
     <Compile Include="Calculation\PURRequisitionSavePlugIn.cs" />
     <Compile Include="Calculation\MrpWizardForm.cs" />
     <Compile Include="Calculation\HighVersionBomDatas.cs" />

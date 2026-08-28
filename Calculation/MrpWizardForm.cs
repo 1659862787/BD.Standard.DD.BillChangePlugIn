@@ -27,7 +27,7 @@ namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
                 foreach (var item in dynamicObjectCollection)
                 {
                     string MaterialId_id = item["MaterialId_id"].ToString();
-                    string UseOrgId_Id = ((DynamicObject)item["MaterialId"])["UseOrgId_Id"].ToString();
+                    string UseOrgId_Id = ((DynamicObject)item["MaterialId"])["  "].ToString();
                     List<DynamicObject> value = HighVersionBomDatas.HighVersionBomData(this.Context,Convert.ToInt64(MaterialId_id), Convert.ToInt64(UseOrgId_Id), 0);
 
                     if (value.Count > 0)
