@@ -124,6 +124,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartLocks\ProStockAuditOperation.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
