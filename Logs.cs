@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6
+namespace BD.Standard.DD.BillChangePlugIns
 {
     public class Logs
     {

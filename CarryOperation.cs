@@ -2,18 +2,12 @@
 using Kingdee.BOS.Core.DynamicForm;
 using Kingdee.BOS.Core.DynamicForm.PlugIn;
 using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
-using Kingdee.BOS.Core.Metadata;
 using Kingdee.BOS.Orm.DataEntity;
-using Kingdee.BOS.ServiceHelper;
-using Kingdee.BOS.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6
+namespace BD.Standard.DD.BillChangePlugIns
 {
     [Kingdee.BOS.Util.HotUpdate]
     [Description("携带bom版本操作服务插件")]

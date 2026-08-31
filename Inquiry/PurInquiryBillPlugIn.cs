@@ -15,10 +15,10 @@ using System.Drawing;
 using Kingdee.BOS.Core;
 using OfficeOpenXml.Style;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6.Inquiry
+namespace BD.Standard.DD.BillChangePlugIns.Inquiry
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("采购申请生成采购询价单——表单插件")]
+    [Description("采购申请生成采购询价单——表单插件(未使用)")]
     public class PurInquiryBillPlugIn : AbstractBillPlugIn
     {
 

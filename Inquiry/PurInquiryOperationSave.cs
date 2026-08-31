@@ -10,10 +10,10 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6.Inquiry
+namespace BD.Standard.DD.BillChangePlugIns.Inquiry
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("采购询价单保存操作插件")]
+    [Description("采购询价单保存操作插件(未使用)")]
     public class PurInquiryOperationSave : AbstractOperationServicePlugIn
     {
 

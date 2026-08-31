@@ -9,10 +9,10 @@ using Kingdee.BOS.JSON;
 using OfficeOpenXml;
 using System.IO;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6.Inquiry
+namespace BD.Standard.DD.BillChangePlugIns.Inquiry
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("询价单数据引入处理")]
+    [Description("询价单数据引入处理(未使用)")]
     public class CreateView : AbstractDynamicFormPlugIn
     {
         const string FileUploadServicesDir = "FileUploadServices/UploadFiles";

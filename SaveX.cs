@@ -1,19 +1,14 @@
-﻿using Kingdee.BOS.App.Core;
-using Kingdee.BOS.App.Data;
-using Kingdee.BOS.Core.DynamicForm;
+﻿using Kingdee.BOS.App.Data;
 using Kingdee.BOS.Core.DynamicForm.PlugIn;
 using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
-using Kingdee.BOS.Core.Metadata;
 using Kingdee.BOS.Core.Metadata.FieldElement;
 using Kingdee.BOS.Orm.DataEntity;
-using Kingdee.BOS.ServiceHelper;
-using Kingdee.BOS.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6
+namespace BD.Standard.DD.BillChangePlugIns
 {
     [Kingdee.BOS.Util.HotUpdate]
     [Description("调拨单保存与审核操作服务插件")]

@@ -1,17 +1,12 @@
-﻿using Kingdee.BOS;
-using Kingdee.BOS.App.Data;
-using Kingdee.BOS.Authentication;
-using Kingdee.BOS.Core.Bill.PlugIn;
-using Kingdee.BOS.Core.DynamicForm.PlugIn;
+﻿using Kingdee.BOS.Core.DynamicForm.PlugIn;
 using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
 using Kingdee.BOS.Core.Metadata.EntityElement;
 using Kingdee.BOS.Orm.DataEntity;
-using Kingdee.BOS.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
+namespace BD.Standard.DD.BillChangePlugIns.Calculation
 {
     [Kingdee.BOS.Util.HotUpdate]
     [Description("生产订单表单更新最新bom版本")]

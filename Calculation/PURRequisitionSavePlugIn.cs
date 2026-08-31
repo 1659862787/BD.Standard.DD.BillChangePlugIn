@@ -1,11 +1,7 @@
-﻿using Kingdee.BOS.App.Core;
-using Kingdee.BOS.App.Data;
-using Kingdee.BOS.Core.DynamicForm;
+﻿using Kingdee.BOS.App.Data;
 using Kingdee.BOS.Core.DynamicForm.PlugIn;
 using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
-using Kingdee.BOS.Core.Metadata;
 using Kingdee.BOS.Orm.DataEntity;
-using Kingdee.BOS.ServiceHelper;
 using Kingdee.BOS.Util;
 using Kingdee.BOS.WebApi.FormService;
 using Newtonsoft.Json;
@@ -13,11 +9,8 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
+namespace BD.Standard.DD.BillChangePlugIns.Calculation
 {
     [Kingdee.BOS.Util.HotUpdate]
     [Description("采购申请单提交、撤销、反审核操作插件")]

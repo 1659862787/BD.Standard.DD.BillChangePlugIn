@@ -1,14 +1,11 @@
-﻿using Kingdee.BOS;
-using Kingdee.BOS.Core.DynamicForm.PlugIn;
-using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
+﻿using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
 using Kingdee.BOS.Core.List.PlugIn;
 using Kingdee.BOS.Core.List.PlugIn.Args;
-using Kingdee.BOS.Orm.DataEntity;
 using System;
 using System.ComponentModel;
 
 
-namespace BD.Standard.DD.BillChangePlugIns3s6
+namespace BD.Standard.DD.BillChangePlugIns
 {
     [Description("简单生产领料单列表插件")]
     [Kingdee.BOS.Util.HotUpdate]

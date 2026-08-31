@@ -1,14 +1,10 @@
-﻿using Kingdee.BOS.App.Data;
-using Kingdee.BOS.Core.DynamicForm.PlugIn;
+﻿using Kingdee.BOS.Core.DynamicForm.PlugIn;
 using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
-using Kingdee.BOS.Core.Metadata.EntityElement;
-using Kingdee.BOS.Core.Metadata.FieldElement;
-using Kingdee.BOS.Orm.DataEntity;
 using Kingdee.BOS.Util;
 using System;
 using System.ComponentModel;
 
-namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
+namespace BD.Standard.DD.BillChangePlugIns.Calculation
 {
     [Description("收货确认单判断到货日期插件")]
     [Kingdee.BOS.Util.HotUpdate]

@@ -1,19 +1,13 @@
-﻿using Kingdee.BOS.App.Data;
+﻿using Kingdee.BOS;
+using Kingdee.BOS.App.Data;
 using Kingdee.BOS.Orm.DataEntity;
 using Kingdee.BOS.WebApi.FormService;
-using Kingdee.BOS;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Security.Cryptography;
-using Newtonsoft.Json;
-using Kingdee.BOS.Core.DynamicForm;
-using Kingdee.BOS.Core.Bill;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6.StartLocks
+namespace BD.Standard.DD.BillChangePlugIns.StartLocks
 {
     public class LocksUtils
     {

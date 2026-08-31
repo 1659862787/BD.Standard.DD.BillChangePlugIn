@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
+namespace BD.Standard.DD.BillChangePlugIns.Calculation
 {
     public static class HighVersionBomDatas
     {

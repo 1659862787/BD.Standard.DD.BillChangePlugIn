@@ -1,26 +1,16 @@
 ﻿using Kingdee.BOS;
 using Kingdee.BOS.App.Data;
-using Kingdee.BOS.Core.DynamicForm;
-using Kingdee.BOS.Core.DynamicForm.PlugIn;
 using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
 using Kingdee.BOS.Core.List;
 using Kingdee.BOS.Core.List.PlugIn;
-using Kingdee.BOS.Core.Metadata.EntityElement;
-using Kingdee.BOS.Core.Metadata.FieldElement;
 using Kingdee.BOS.Orm.DataEntity;
-using Kingdee.BOS.Util;
-using Kingdee.BOS.WebApi.FormService;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6.Inquiry
+namespace BD.Standard.DD.BillChangePlugIns.Inquiry
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("生产订单列表开工判断是否锁库")]
+    [Description("生产订单列表开工判断是否锁库(未使用)")]
     public class ProOrderListPlugin : AbstractListPlugIn
     {
 

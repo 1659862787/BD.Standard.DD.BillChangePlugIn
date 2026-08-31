@@ -7,8 +7,8 @@
     <ProjectGuid>{489D9DC0-955C-442A-987A-946B9F027B5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BD.Standard.DD.BillChangePlugIns2608X02</RootNamespace>
-    <AssemblyName>BD.Standard.DD.BillChangePlugIns2608X02</AssemblyName>
+    <RootNamespace>BD.Standard.DD.BillChangePlugIns2608X03</RootNamespace>
+    <AssemblyName>BD.Standard.DD.BillChangePlugIns2608X03</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -123,9 +123,6 @@
     <Compile Include="ProduceChanged.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartLocks\ProStockAuditOperation.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

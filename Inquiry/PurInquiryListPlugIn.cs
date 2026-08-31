@@ -16,10 +16,10 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6.Inquiry
+namespace BD.Standard.DD.BillChangePlugIns.Inquiry
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("采购申请生成采购询价单列表插件")]
+    [Description("采购申请生成采购询价单列表插件(未使用)")]
     public class PurInquiryListPlugIn : AbstractListPlugIn
     {
 

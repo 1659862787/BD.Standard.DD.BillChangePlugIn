@@ -6,11 +6,8 @@ using Kingdee.BOS.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BD.Standard.DD.BillChangePlugIns2606X01.Calculation
+namespace BD.Standard.DD.BillChangePlugIns.Calculation
 {
     [Kingdee.BOS.Util.HotUpdate]
     [Description("计划运算向导插件-获取BOM最高版本")]

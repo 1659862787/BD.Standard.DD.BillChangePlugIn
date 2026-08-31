@@ -9,16 +9,12 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6.StartLocks
+namespace BD.Standard.DD.BillChangePlugIns.StartLocks
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("生产出库判断是否锁库")]
+    [Description("生产出库判断是否锁库(未使用)")]
     public  class ProStockAuditOperation:AbstractOperationServicePlugIn
     {
 

@@ -8,7 +8,7 @@ using Kingdee.BOS.Util;
 using System;
 using System.ComponentModel;
 
-namespace BD.Standard.DD.BillChangePlugIns3s6
+namespace BD.Standard.DD.BillChangePlugIns
 {
     [Description("项目生产订货变更单_插件")]
     [Kingdee.BOS.Util.HotUpdate]
