@@ -16,7 +16,7 @@ using System.Data;
 namespace BD.Standard.DD.BillChangePlugIns3s6
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("调拨操作服务插件")]
+    [Description("调拨单保存与审核操作服务插件")]
     public class SaveX : AbstractOperationServicePlugIn
     {
         public override void OnPreparePropertys(PreparePropertysEventArgs e)

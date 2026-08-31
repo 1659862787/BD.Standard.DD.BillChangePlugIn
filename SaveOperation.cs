@@ -16,7 +16,7 @@ using System.Text;
 namespace BD.Standard.DD.BillChangePlugIns3s6
 {
     [Kingdee.BOS.Util.HotUpdate]
-    [Description("保存操作服务插件")]
+    [Description("项目生产订货变更单保存操作服务插件")]
     public class SaveOperation : AbstractOperationServicePlugIn
     {
         public override void OnPreparePropertys(PreparePropertysEventArgs e)
