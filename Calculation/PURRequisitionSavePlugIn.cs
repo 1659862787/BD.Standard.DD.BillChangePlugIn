@@ -56,7 +56,7 @@ namespace BD.Standard.DD.BillChangePlugIns.Calculation
                             {
                                 throw new Exception($"物料{Number}存在图片附件，但采购图片未勾选，修改后重新提交！");
                             }
-                            else
+                            else if (IsPurImage && Image != null)
                             {
                                 Byte[] FIMAGE = (Byte[])Image;
                                 string SendByte = Convert.ToBase64String(FIMAGE);
